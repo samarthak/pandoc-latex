@@ -1,0 +1,28 @@
+# mydefault.yaml
+
+standalone: true # Needed to add header
+# pdf-engine: xelatex
+pdf-engine: tectonic
+number-sections: true # Allow numbering of sections
+highlight-style: monochrome
+from: markdown
+verbosity: ERROR
+filters:
+    # ${.} for defaults folder path
+    # Add feature for containers for PDF output
+    - ${.}/filters/fenced_block.lua
+    # Fix for table captions
+    - ${.}/filters/table_caption.py
+metadata:
+    documentclass: article
+    papersize: a4
+    classoption:
+        - 11pt
+        - twoside
+        - twocolumn
+        - fleqn # Align display style equations to left
+    geometry:
+        - margin=1in
+        - heightrounded
+include-in-header:
+    - ${.}/headers/head.tex
