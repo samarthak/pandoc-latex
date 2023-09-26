@@ -10,4 +10,4 @@ A demonstration of using Pandoc in conjunction with LaTeX for PDF outputs. It re
 
 ## Tutorial
 
-An extensive tutorial can be found in this [blog post](https://samarthak.com.np/blog/pandoc-latex).
+An extensive tutorial can be found in this [blog post](https://samarthak.com.np/writings/pandoc-latex).
